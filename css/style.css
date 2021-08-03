@@ -1,0 +1,243 @@
+/****************************************************
+                      GLOBAL
+*****************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*par securité àla fin*/
+    font-family: verdana, sans-serif;
+}
+
+header,
+footer {
+    text-align: center;
+    font-size: 1.1em;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Navigation pour le header  */
+
+img {
+
+    max-width: 150px;
+
+}
+
+.clear {
+    /*pour stopper l'influence du float  */
+    clear: both;
+}
+
+/****************************************************
+                      HEADER
+*****************************************************/
+
+header {
+    background-color: #fbf1f3;
+}
+
+
+header nav a {
+    color: #144964;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 30px;
+    text-decoration: none;
+
+}
+
+header nav {
+
+    padding: 75px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/****************************************************
+                      MAIN
+*****************************************************/
+
+
+/*----------------------form1 ---------------*/
+input {
+
+    border-top: none;
+    border-right: none;
+    width: 100%;
+}
+
+textarea {
+
+
+    border-top: none;
+    border-right: none;
+    width: 100%;
+}
+
+/*******************************h1*********************/
+h1 {
+    color: white;
+    background-color: #fb8a9b;
+    padding: 3rem 10%;
+    margin-top: 0px;
+    text-align: left;
+
+
+}
+
+/*---------------- --------------------SECTION----------------------------------------------------*/
+main section {
+
+    margin: 30px auto;
+
+
+}
+
+/*************************h2**********************/
+h2 {
+
+    border-top: solid 0.1em;
+    border-left: solid .4em;
+    padding-left: .5em;
+    color: #144964;
+    margin-top: 2em;
+}
+
+
+
+/********************************Div *****************************************/
+/* --------------------------article---------------------- */
+h3 {
+    color: #144964;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+
+article {
+    text-align: center;
+    padding: 15px;
+    margin-top: 2em;
+    flex-basis: 30%;
+    border: 1px dotted #144964;
+    color: #444;
+}
+
+span {
+    font-style: italic;
+}
+
+
+.firstarticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ensavoirplus {
+    background-color: #fb8a9b;
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: white;
+}
+
+/**********************Map***************************/
+
+/****************************************************
+                     Section map
+*****************************************************/
+.map {
+
+    border-top: solid .3em #144964;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/****************************************************
+                     footer
+*****************************************************/
+footer {
+    background-color: #144964;
+    padding-bottom: 20px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+
+}
+
+footer nav {
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    padding: 75px;
+}
+
+footer p {
+    color: white;
+}
+
+/****************************************************
+                      RESPONSIVE
+*****************************************************/
+
+/*------------ TABLETTE ---------------*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+
+        max-width: 90%;
+    }
+
+    .firstarticle {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+
+
+    }
+
+    article {
+        flex-basis: 45%;
+
+    }
+
+}
+
+/*------------ MOBILE ---------------*/
+
+@media screen and (max-width: 767px) {
+
+    footer nav,
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: ;
+    }
+
+    .firstarticle {
+        flex-direction: column;
+
+    }
+}
